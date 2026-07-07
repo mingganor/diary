@@ -15,3 +15,6 @@ print(type(date))
 str(date)
 num_str=str(date)
 print(type(str),num_str)
+#danhang
+print("pokemmo" )
+
