@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 """duohang
 just
     tab
@@ -15,3 +16,7 @@ print(type(date))
 str(date)
 num_str=str(date)
 print(type(str),num_str)
+=======
+#danhang
+print("pokemmo" )
+>>>>>>> f1e62208d41cc0051f8f0bb0e4e4dc77af99d218
