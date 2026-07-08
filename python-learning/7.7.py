@@ -1,3 +1,4 @@
+
 """duohang
 just
     tab
@@ -17,4 +18,5 @@ num_str=str(date)
 print(type(str),num_str)
 #danhang
 print("pokemmo" )
-
+#danhang
+print("pokemmo" )
