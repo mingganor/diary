@@ -1,0 +1,10 @@
+a=10
+b=20
+print(a,b)
+c=a
+a=b
+b=c
+print(a,b)
+a=str(a)
+print('first''second'+a,'third'+'forth')
+print('first''second%s'%a,'third''forth')
