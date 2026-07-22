@@ -1,0 +1,9 @@
+a=13
+a+=2
+print(a)
+a**=2
+print(a)
+c=int(input('输入一个值'))
+d=float(c)
+print(f'{c}在10与20之间',10<=c<=20)
+print(f'{d}在10与20之间',10<=d<=20)
