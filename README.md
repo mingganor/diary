@@ -1,2 +1,0 @@
-# diary
-daily self-improvement
