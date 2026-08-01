@@ -6,3 +6,6 @@ print(b)
 c=float(input('number'))
 avg=c/3
 print(f'{avg:.1f}')
+s={1,5.9}
+kong={}
+kong=dict()
