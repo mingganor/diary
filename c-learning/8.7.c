@@ -4,7 +4,7 @@ int main()
 {
     int cm;
     scanf("%d",&cm);
-    double foot=cm/100.0/0.3048;
+    double foot=cm/30.48;
     int inch=foot*12;
     int foot2=foot;
     printf("%d %d",foot2,inch%12);
