@@ -1,37 +1,23 @@
-/*
 #include <stdio.h>
+#include <stdlib.h>//为随机数而写
+#include <time.h>//同上
 int main(){
-    int v;
-    scanf("%d",&v);
-    if (v<=60){
-        printf("Speed: %d - OK",v);
-    }else{
-        printf("Speed:%d-Speeding",v);
-    }  
-    int h;
-    int m;
-    scanf("%d:%d",&h,&m);
-    if (h<=12){
-        if (h<12){  
-            printf("%d:%d AM",h,m);
-        }else{
-            printf("%d:%d PM",h,m);
+    srand(time(0));
+    int a=rand()%100+1;//生成的随机数取后俩位
+    int count=0;
+    int b;
+    do {
+        printf("从1到100猜一个数");
+        scanf("%d",&b);
+        count++;
+        if (b>a){
+            printf("大了\n");
+        }else if (b<a){
+            printf("小了\n");
+        }else {
+            printf("猜对了\n");
+            printf("猜了%d次",count);
         }
-    }else{
-        printf("%d:%d PM",h-12,m);
-    }
-    return 0;   
-}*/
-#include <stdio.h>
-int main(){
-    int a,b,c;
-    scanf("%d %d %d",&a,&b,&c);
-    if (a!=b && b==c){
-        printf("A");
-    }else if (b!=a && a==c){
-        printf("B");
-    }else{
-        printf("C");
-    }
+    }while (b!=a);
     return 0;
 }
