@@ -27,3 +27,12 @@ int main(){
     }
     return 0;
 }
+/*接力退出 for 
+            for
+                 for 
+                    if 
+                   int exit=1;//goto out
+                   break;
+            if (exit==1) break;
+//out:
+*/
