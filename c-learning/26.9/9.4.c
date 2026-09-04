@@ -13,7 +13,7 @@ int main(){
         high-=d;    
     }
     return 0;
-}*/
+}
 #include <stdio.h>
 #include <math.h>
 double a3,a2,a1,a0,a,b;
@@ -48,4 +48,25 @@ int main(){
 double f(double x){
     double fx=a3*x*x*x+a2*x*x+a1*x+a0;
     return fx;
+}*/
+#include <stdio.h>
+int main(){
+    const int number=10;
+    int x;
+    int count[10];
+    int i;
+    for (i=0;i<number;i++){
+        count[i]=0;
+    }
+    scanf("%d",&x);
+    while (x!=-1){
+        if(x>=0 && x<=9){
+            count[x]++;
+        }
+        scanf("%d",&x);
+    }
+    for (i=0;i<number;i++){
+        printf("%d:%d ",i,count[i]);
+    }
+    return 0;
 }
