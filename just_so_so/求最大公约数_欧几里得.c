@@ -4,9 +4,9 @@ int main(){
     printf("请输入一个较大的正整数和一个较小的");
     scanf("%d %d",&a,&b);
     while (b!=0){
-        c=a%b;
+        c=a;
         a=b;
-        b=c;
+        b=c%b;
     }
     printf("它俩最大公约数为%d",a);
     return 0;
