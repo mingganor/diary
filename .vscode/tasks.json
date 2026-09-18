@@ -22,6 +22,27 @@
                 "isDefault": true
             },
             "detail": "macOS 适配版：编译 C 文件为可执行文件（无后缀）"
+        },
+        {
+            "label": "Mac Duo：构建应用",
+            "type": "shell",
+            "command": "${workspaceFolder}/mac-duo/build.sh",
+            "options": {
+                "cwd": "${workspaceFolder}/mac-duo"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Mac Duo：构建并运行",
+            "type": "shell",
+            "command": "${workspaceFolder}/mac-duo/build.sh",
+            "args": [
+                "--run"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}/mac-duo"
+            },
+            "problemMatcher": []
         }
     ]
 }
