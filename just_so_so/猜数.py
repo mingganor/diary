@@ -1,5 +1,5 @@
 import random
-a=random.randint(1,100)
+a=random.randint(1,8)
 print('I have a random number between 1 and 100,hahaha!')
 b=input('who are you?')
 while True:
