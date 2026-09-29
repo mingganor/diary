@@ -1,0 +1,39 @@
+{
+    "version": "0.2.0",
+    "configurations": [  
+        {
+            "name": "调试 C++ (clang++)",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${fileDirname}/${fileBasenameNoExtension}",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "lldb",
+            "preLaunchTask": "C/C++: clang++ 编译 C++ 文件"
+        },
+        {
+            "name": "调试 C (clang)",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${fileDirname}/${fileBasenameNoExtension}",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "lldb",
+            "preLaunchTask": "C/C++: clang 编译 C 文件"
+        },
+        {
+            "name": "运行 Python",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "preLaunchTask": "Python: 运行当前文件"
+        }
+    ]
+}
