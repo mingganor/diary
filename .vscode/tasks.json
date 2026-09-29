@@ -3,25 +3,47 @@
     "tasks": [
         {
             "type": "cppbuild",
-            "label": "C/C++: gcc 编译当前文件 (macOS)",
-            "command": "gcc",
+            "label": "C/C++: clang++ 编译 C++ 文件",
+            "command": "/usr/bin/clang++",
             "args": [
                 "-fdiagnostics-color=always",
+                "-std=c++17",
+                "-stdlib=libc++",
+                "-g",
                 "${file}",
                 "-o",
                 "${fileDirname}/${fileBasenameNoExtension}"
             ],
-            "options": {
-                "cwd": "${fileDirname}"
-            },
-            "problemMatcher": [
-                "$gcc"
+            "options": { "cwd": "${fileDirname}" },
+            "problemMatcher": ["$gcc"],
+            "group": { "kind": "build", "isDefault": true },
+            "detail": "编译 C++ (.cpp) 文件"
+        },
+        {
+            "type": "cppbuild",
+            "label": "C/C++: clang 编译 C 文件",
+            "command": "/usr/bin/clang",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}/${fileBasenameNoExtension}"
             ],
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            },
-            "detail": "macOS 适配版：编译 C 文件为可执行文件（无后缀）"
+            "options": { "cwd": "${fileDirname}" },
+            "problemMatcher": ["$gcc"],
+            "group": { "kind": "build", "isDefault": true },
+            "detail": "编译 C (.c) 文件"
+        },
+        {
+            "type": "shell",
+            "label": "Python: 运行当前文件",
+            "command": "python3",
+            "args": ["${file}"],
+            "options": { "cwd": "${fileDirname}" },
+            "problemMatcher": [],
+            "group": { "kind": "build", "isDefault": true },
+            "detail": "运行 Python (.py) 文件"
         }
     ]
 }
